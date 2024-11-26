@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import ProfileImage from '../assets/images/hero-img.png';
+
 
 const IntroSection = () => {
   const [showWelcome, setShowWelcome] = useState(false);
@@ -22,11 +24,11 @@ const IntroSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-purple-900 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-custom-dark flex flex-col items-center justify-center p-4">
       <img
-        src="/api/placeholder/400/400"
+        src={ProfileImage}
         alt="Profile"
-        className="mb-8 rounded-lg w-[400px] h-[400px] object-cover"
+        className="mb-8 rounded-lg w-[600px] h-[500px] object-cover"
       />
       
       <h1 
