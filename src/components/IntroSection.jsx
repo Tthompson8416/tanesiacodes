@@ -25,17 +25,17 @@ const IntroSection = () => {
 
   return (
     <div>
-    <div className="min-h-screen bg-custom-dark flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-custom-dark flex flex-col items-center justify-center p-0 pt-18 lg:pb-56">
     <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white"></div>
     
       <img
         src={ProfileImage}
         alt="Profile"
-        className="mb-8 rounded-lg w-[600px] h-[500px] object-cover"
+        className="mb-4 rounded-lg w-[600px] h-[500px] object-cover"
       />
       
       <h1 
-        className={`text-4xl md:text-5xl text-white mb-6 transition-opacity duration-1000 ease-in-out ${
+        className={`text-4xl md:text-5xl text-white mb-4 transition-opacity duration-1000 ease-in-out ${
           showWelcome ? 'opacity-100' : 'opacity-0'
         }`}
       >
