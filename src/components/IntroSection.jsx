@@ -24,7 +24,10 @@ const IntroSection = () => {
   }, []);
 
   return (
+    <div>
     <div className="min-h-screen bg-custom-dark flex flex-col items-center justify-center p-4">
+    <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white"></div>
+    
       <img
         src={ProfileImage}
         alt="Profile"
@@ -47,6 +50,7 @@ const IntroSection = () => {
         My name is [Your Name], a front-end developer based in [Your Location].
       </p>
     </div>
+    </div>   
   );
 };
 
