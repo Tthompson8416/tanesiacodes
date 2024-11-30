@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ProfileImage from '../assets/images/desktop-2.png';
+import ProfileImage from '../assets/images/desktop.png';
 
 
 const IntroSection = () => {

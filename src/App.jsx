@@ -1,4 +1,4 @@
-import IntroSection from './components/IntroSection'
+import IntroSection from './components/PortfolioPage'
 
 function App() {
   return (
