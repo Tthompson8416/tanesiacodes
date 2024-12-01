@@ -50,7 +50,7 @@ const typingInterval = showIntro ? setInterval(() => {
         <img
           src={ProfileImage}
           alt="Profile"
-          className="mb-4 rounded-lg w-[600px] h-[500px] object-cover"
+          className="mb-10 mr-5 rounded-lg w-[600px] h-[500px] object-cover"
         />
 
         <h1
