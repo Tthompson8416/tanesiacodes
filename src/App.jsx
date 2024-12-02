@@ -1,9 +1,12 @@
-import PortfolioPage from './components/PortfolioPage'; // Correct import
+import PortfolioPage from './components/PortfolioPage'; 
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div>
-      <PortfolioPage /> {/* Only render PortfolioPage */}
+      <PortfolioPage />
+      <Footer />
     </div>
   );
 }
