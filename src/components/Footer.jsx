@@ -12,7 +12,7 @@ const Footer = () => {
         </p>
         <p className="text-lg mt-2">
           <a
-            href="tel:+3238771527"
+            href="tel:3238771527"
             className="text-white hover:underline"
           >
             (323) 877-1527
