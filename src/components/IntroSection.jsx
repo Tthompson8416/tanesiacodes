@@ -16,7 +16,7 @@ const IntroSection = () => {
       setShowWelcome(true);
     }, 1000);
 
-     // [2] NEW TYPING EFFECT: Add typing animation logic
+    
      let typingIndex = 0;
 const typingInterval = showIntro ? setInterval(() => {
   if (typingIndex < introText.length) {
@@ -36,10 +36,10 @@ const typingInterval = showIntro ? setInterval(() => {
     return () => {
       clearTimeout(welcomeTimer);
       clearTimeout(introTimer);
-            // [3] CLEANUP: Add cleanup for typing interval
+           
             if (typingInterval) clearInterval(typingInterval);
           };
-        }, [showIntro]); // [4] DEPENDENCY: Add showIntro to dependency array
+        }, [showIntro]);
     
 
   return (
@@ -61,13 +61,11 @@ const typingInterval = showIntro ? setInterval(() => {
           Welcome.
         </h1>
 
-        {/* [5] MODIFIED PARAGRAPH: Replace static text with typed text */}
         <p
           className={`text-lg md:text-xl text-gray-200 text-center transition-opacity duration-1000 ease-in-out ${
             showIntro ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* [6] CURSOR EFFECT: Optional blinking cursor */}
           {typedText}<span className={`inline-block w-1 h-5 bg-white animate-blink ${showIntro ? 'visible' : 'invisible'}`}></span>
         </p>
       </div>

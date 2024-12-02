@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-6">
@@ -12,7 +13,7 @@ const Footer = () => {
         </p>
         <p className="text-sm mt-2">
           <a
-            href="tel:+3238771527"
+            href="tel:3238771527"
             className="text-blue-400 hover:underline"
           >
             (323) 877-1527
