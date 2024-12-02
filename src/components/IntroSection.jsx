@@ -63,7 +63,7 @@ const typingInterval = showIntro ? setInterval(() => {
 
         {/* [5] MODIFIED PARAGRAPH: Replace static text with typed text */}
         <p
-          className={`text-lg md:text-xl pl-60 pr-60 text-gray-200 text-center transition-opacity duration-1000 ease-in-out ${
+          className={`text-lg md:text-xl text-gray-200 text-center transition-opacity duration-1000 ease-in-out ${
             showIntro ? "opacity-100" : "opacity-0"
           }`}
         >
