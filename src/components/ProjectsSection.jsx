@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
-
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectsSection = ({ projects }) => {
   return (
@@ -31,12 +32,27 @@ const ProjectsSection = ({ projects }) => {
                   </span>
                 ))}
               </div>
-              <a
-                href={project.link}
-                className="text-blue-600 hover:text-blue-800 transition-colors"
-              >
-                View Project
-              </a>
+
+              <div className="flex items-center space-x-4">
+                <a
+                  href={project.link}
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  View Project
+                </a>
+
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-black transition-colors"
+                  >
+                    <FontAwesomeIcon icon={faGithub} size="lg" />{" "}
+                    {/* Large size GitHub icon */}
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
@@ -53,6 +69,7 @@ ProjectsSection.propTypes = {
       image: PropTypes.string.isRequired,
       techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
       link: PropTypes.string.isRequired,
+      githubLink: PropTypes.string,
     })
   ).isRequired,
 };
