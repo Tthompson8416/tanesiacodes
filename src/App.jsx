@@ -1,11 +1,11 @@
-import IntroSection from './components/PortfolioPage'
+import PortfolioPage from './components/PortfolioPage'; // Correct import
 
 function App() {
   return (
     <div>
-      <IntroSection />
+      <PortfolioPage /> {/* Only render PortfolioPage */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
