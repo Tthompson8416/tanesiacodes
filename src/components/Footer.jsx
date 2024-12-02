@@ -4,23 +4,23 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 text-center">
         <p className="text-sm">
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:tthompson8416@outlook.com"
             className="text-blue-400 hover:underline"
           >
-            your-email@example.com
+            My Email
           </a>
         </p>
         <p className="text-sm mt-2">
           <a
-            href="tel:+1234567890"
+            href="tel:+3238771527"
             className="text-blue-400 hover:underline"
           >
-            (123) 456-7890
+            (323) 877-1527
           </a>
         </p>
         <p className="text-sm mt-2">
           <a
-            href="/path-to-resume.pdf"
+            href="/tanesiacodes/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:underline"
@@ -28,7 +28,7 @@ const Footer = () => {
             My Resume
           </a>
         </p>
-        <p className="text-sm mt-6">&copy; {new Date().getFullYear()} yourwebsite.com</p>
+        <p className="text-sm mt-6">&copy; {new Date().getFullYear()} https://tthompson8416.github.io/tanesiacodes/</p>
       </div>
     </footer>
   );
