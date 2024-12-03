@@ -26,7 +26,7 @@ const typingInterval = showIntro ? setInterval(() => {
     setTypedText(introText);
     clearInterval(typingInterval);
   }
-}, 50) : null;
+}, 40) : null;
 
     // Trigger intro text animation after welcome
     const introTimer = setTimeout(() => {
@@ -62,7 +62,7 @@ const typingInterval = showIntro ? setInterval(() => {
         </h1>
 
         <p
-          className={`text-lg md:text-xl text-gray-200 text-center transition-opacity duration-1000 ease-in-out ${
+          className={`text-lg md:text-xl text-gray-200 text-center transition-opacity mr-10 ml-10 p-5 pl-2 pr-2 duration-1000 ease-in-out ${
             showIntro ? "opacity-100" : "opacity-0"
           }`}
         >
