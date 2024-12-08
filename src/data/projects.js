@@ -1,8 +1,8 @@
-import projectOneImage from "/public/assets/images/taskinator.jpg";
-import projectTwoImage from "/public/assets/images/Fridge-to-Feast.jpg";
-import projectThreeImage from "/public/assets/images/Battle-Bots.jpg";
-import projectFourImage from "/public/assets/images/Password-Generator.jpg";
-import projectFiveImage from "/public/assets/images/Weather-Dashboard.jpg";
+import projectOneImage from "/src/assets/images/taskinator.jpg";
+import projectTwoImage from "/src/assets/images/Fridge-to-Feast.jpg";
+import projectThreeImage from "/src/assets/images/Battle-Bots.jpg";
+import projectFourImage from "/src/assets/images/Password-Generator.jpg";
+import projectFiveImage from "/src/assets/images/Weather-Dashboard.jpg";
 
 // Projects array
 const projects = [

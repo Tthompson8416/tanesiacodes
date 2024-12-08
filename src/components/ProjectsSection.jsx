@@ -1,8 +1,15 @@
+import { useEffect } from 'react';
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import AOS from 'aos';  // Import AOS library
+import 'aos/dist/aos.css';  // Import AOS styles
 
 const ProjectsSection = ({ projects }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); 
+  }, []);
+
   return (
     <section className="bg-white rounded-t-3xl mt-12 px-8 py-12">
       <h2 className="text-3xl font-bold mb-8 text-center">My Work</h2>
