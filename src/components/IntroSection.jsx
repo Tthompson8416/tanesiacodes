@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'; // Import Framer Motion for animations
-import ProfileImage from '../assets/images/desktop.png'; // Import profile image
+import { motion } from "framer-motion"; // Import Framer Motion for animations
+import ProfileImage from "../assets/images/desktop.png"; // Import profile image
 
 const IntroSection = () => {
   // Framer Motion animation variants for each letter/word
@@ -29,7 +29,7 @@ const IntroSection = () => {
   const introText = `My name is Tanesia Thompson, I'm a front-end developer based in Richmond, Virginia. With a passion for combining technical precision and design-driven problem-solving, I aim to craft innovative web experiences that balance aesthetic appeal with functional excellence. I specialize in creating dynamic, user-focused digital solutions through expertise in HTML, CSS, JavaScript, and React to enhance usability and engagement.`;
 
   // Split the text into an array of words for word-based animation
-  const words = introText.split(' ');
+  const words = introText.split(" ");
 
   return (
     <motion.div
@@ -67,15 +67,15 @@ const IntroSection = () => {
           variants={paragraphVariants}
           initial="hidden"
           animate="visible"
-          className="text-lg md:text-xl text-gray-200 text-center mx-10 p-5"
+          className="text-lg md:text-xl text-gray-200 text-center mx-auto p-5 max-w-screen-md sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-[800px] pb-24 sm:pb-12 md:pb-36"
         >
           {words.map((word, index) => (
             <motion.span
               key={index}
-              variants={wordVariants} // Apply the individual word animation
-              className="inline-block mr-2" // Ensure proper spacing between words
+              variants={wordVariants}
+              className="inline-block mr-2"
             >
-              {word} {/* Display each word */}
+              {word}
             </motion.span>
           ))}
         </motion.div>
