@@ -11,8 +11,8 @@ export default {
         'custom-light': '#eadcc2', // Light background for cards
         'custom-accent': '#15a9a9', // Accent color for headings and buttons
         'custom-border': '#b6e2d3', // Border color
-        'custom-gh': '#', // Intro / footer text color
-        'custom-subtext': '#', // Project Description text color
+        'custom-gh': '#555555', // Intro / footer text color
+        'custom-subtext': '#7e481c', // Project Description text color
         'custom-intro-bg': '#15a9a9',
         'custom-intro-text': '#eadcc2',
     },
@@ -21,3 +21,4 @@ export default {
   
   plugins: [],
 }
+
