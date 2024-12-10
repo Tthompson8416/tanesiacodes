@@ -7,15 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-dark': '#fefcff', // Background color for sections
+        'custom-dark': '#faf4eb', // Background color for sections
         'custom-light': '#f5f5f5', // Light background for cards
-        'custom-accent': '#34282c', // Accent color for headings and buttons
-        'custom-border': '#34282c', // Border color
-        'custom-text': '#4caf50', // Primary text color
-        'custom-subtext': '#b86500', // Secondary text color
+        'custom-accent': '#524748', // Accent color for headings and buttons
+        'custom-border': '#524748', // Border color
+        'custom-text': '#eadcc2', // Primary text color
+        'custom-subtext': '#f3e1d8', // Secondary text color
         'custom-link': '#ffcc99',
-        'custom-intro': '#ffcc99',
-        'custom-intro-text': '#34282c',
+        'custom-intro': '#15a9a9',
+        'custom-intro-text': '#eadcc2',
     },
   },
 },

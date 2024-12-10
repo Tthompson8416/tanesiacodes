@@ -67,7 +67,7 @@ const IntroSection = () => {
           variants={paragraphVariants}
           initial="hidden"
           animate="visible"
-          className="text-lg text-custom-intro-text text-center mx-auto p-5 max-w-screen-md sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-[800px] pb-12 lg:text-3xl md:text-2xl"
+          className="text-lg text-custom-intro-text text-center mx-auto p-5 max-w-screen-md sm:max-w-[700px] md:max-w-[900px] lg:max-w-[900px] xl:max-w-[1100px] xl:mt-12 pb-24 xl:pb-2 lg:text-3xl md:text-2xl sm:text-xl"
         >
           {words.map((word, index) => (
             <motion.span
