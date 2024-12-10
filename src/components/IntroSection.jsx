@@ -38,7 +38,7 @@ const IntroSection = () => {
       transition={{ duration: 1 }} // Timing for the section animation
       className="intro-section-container"
     >
-      <div className="min-h-screen bg-custom-dark flex flex-col items-center justify-center p-0 pt-18 lg:pb-56 relative overflow-hidden">
+      <div className="min-h-screen bg-custom-intro flex flex-col items-center justify-center p-0 pt-18 lg:pb-56 relative overflow-hidden">
         {/* Gradient overlay at the bottom of the section */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white"></div>
 
@@ -54,7 +54,7 @@ const IntroSection = () => {
 
         {/* Welcome text */}
         <motion.h1
-          className="text-4xl md:text-5xl text-white mb-4"
+          className="text-4xl md:text-5xl text-custom-text mb-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }} // Slight delay for welcome text
@@ -67,7 +67,7 @@ const IntroSection = () => {
           variants={paragraphVariants}
           initial="hidden"
           animate="visible"
-          className="text-lg md:text-xl text-gray-200 text-center mx-auto p-5 max-w-screen-md sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-[800px] pb-24 sm:pb-12 md:pb-36"
+          className="text-lg text-custom-intro-text text-center mx-auto p-5 max-w-screen-md sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-[800px] pb-12 lg:text-3xl md:text-2xl"
         >
           {words.map((word, index) => (
             <motion.span
