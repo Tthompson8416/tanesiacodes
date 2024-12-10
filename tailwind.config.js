@@ -8,13 +8,12 @@ export default {
     extend: {
       colors: {
         'custom-dark': '#faf4eb', // Background color for sections
-        'custom-light': '#f5f5f5', // Light background for cards
-        'custom-accent': '#524748', // Accent color for headings and buttons
-        'custom-border': '#524748', // Border color
-        'custom-text': '#eadcc2', // Primary text color
-        'custom-subtext': '#f3e1d8', // Secondary text color
-        'custom-link': '#ffcc99',
-        'custom-intro': '#15a9a9',
+        'custom-light': '#eadcc2', // Light background for cards
+        'custom-accent': '#15a9a9', // Accent color for headings and buttons
+        'custom-border': '#b6e2d3', // Border color
+        'custom-gh': '#', // Intro / footer text color
+        'custom-subtext': '#', // Project Description text color
+        'custom-intro-bg': '#15a9a9',
         'custom-intro-text': '#eadcc2',
     },
   },

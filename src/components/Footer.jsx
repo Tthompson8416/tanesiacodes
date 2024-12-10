@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-custom-intro text-custom-intro-text py-7 relative overflow-hidden">
+    <footer className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-24">
       {/* Gradient overlay at the top of the footer */}
       <div 
-        className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-custom-intro to-custom-dark">
+        className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-custom-intro-bg to-custom-dark">
         {/* 'absolute' positions the gradient at the top of the footer */}
         {/* 'top-0 left-0' ensures it starts at the top-left corner */}
         {/* 'w-full h-32' makes it span the full width and 32px in height */}

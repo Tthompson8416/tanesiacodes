@@ -30,7 +30,7 @@ const ProjectsSection = ({ projects }) => {
               alt={project.title}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
-            <h3 className="text-xl font-bold mb-2 text-custom-text">
+            <h3 className="text-xl font-bold mb-2 text-custom-accent">
               {project.title}
             </h3>
             <p className="text-custom-subtext mb-4">{project.description}</p>
@@ -39,7 +39,7 @@ const ProjectsSection = ({ projects }) => {
                 {project.techStack.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-custom-accent text-custom-link text-center px-2 py-1 rounded-full text-xs whitespace-nowrap"
+                    className="bg-custom-accent text-custom-light text-center px-2 py-1 rounded-full text-xs whitespace-nowrap"
                   >
                     {tech}
                   </span>
@@ -60,7 +60,7 @@ const ProjectsSection = ({ projects }) => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-custom-text hover:text-black transition-colors"
+                    className="text-custom-gh hover:text-black transition-colors"
                   >
                     <FontAwesomeIcon icon={faGithub} size="lg" />{" "}
                     {/* Large size GitHub icon */}
