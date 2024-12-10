@@ -22,7 +22,7 @@ const ProjectsSection = ({ projects }) => {
               // Framer Motion settings
         initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
         whileInView={{ opacity: 1, y: 0 }} // Fade in and slide into position when in view
-        transition={{ duration: 0.8, delay: index * 0.2 }} // Animation duration and stagger effect
+        transition={{ duration: 1.3, delay: index * 0.4 }} // Animation duration and stagger effect
         viewport={{ once: true }} // Trigger animation only once
           >
             <img
@@ -34,7 +34,7 @@ const ProjectsSection = ({ projects }) => {
               {project.title}
             </h3>
             <p className="text-custom-subtext mb-4">{project.description}</p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-col">
               <div className="flex space-x-2">
                 {project.techStack.map((tech, i) => (
                   <span
@@ -55,6 +55,7 @@ const ProjectsSection = ({ projects }) => {
                 </a>
 
                 {project.githubLink && (
+                  
                   <a
                     href={project.githubLink}
                     target="_blank"
