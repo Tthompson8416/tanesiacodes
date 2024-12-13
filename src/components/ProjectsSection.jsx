@@ -14,13 +14,13 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section className="bg-custom-dark rounded-t-3xl px-8 py-12">
-      <h2 className="text-3xl font-bold mb-8 text-center text-custom-accent">My Work</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="bg-custom-dark rounded-t-3xl px-8 py-16">
+      <h2 className="text-4xl font-bold mb-8 text-center text-custom-accent">My Work</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
   {projectsData.map((project, index) => (
     <motion.div
       key={index}
-      className="bg-custom-light rounded-lg p-6 shadow-md flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-105 border border-custom-border min-h-[300px] 400:min-h-[350px]"
+      className="bg-custom-light rounded-lg p-4 shadow-md flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-105 border border-custom-border min-h-[350px]"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.3, delay: index * 0.4 }}
@@ -31,8 +31,8 @@ const ProjectsSection = () => {
         alt={project.title}
         className="w-full h-48 object-cover rounded-lg mb-4"
       />
-      <h3 className="text-xl font-bold mb-2 text-custom-accent">{project.title}</h3>
-      <p className="text-custom-subtext mb-4">{project.description}</p>
+      <h3 className="text-2xl font-semibold mb-2 text-custom-accent">{project.title}</h3>
+      <p className="text-custom-subtext mb-4 font-thin">{project.description}</p>
       <div className="flex space-x-2 mb-4">
         {project.techStack.map((tech, i) => {
           let IconComponent;
@@ -64,10 +64,10 @@ const ProjectsSection = () => {
           return IconComponent ? <IconComponent key={i} className="text-3xl text-gray-700" /> : null;
         })}
       </div>
-      <div className="flex flex-col justify-between items-center mt-4 space-y-2 text-center sm:flex-col sm:items-center sm:space-y-2 w-full">
+      <div className="flex flex-col justify-center items-center mt-4 space-y-2 text-center sm:flex-col sm:items-center sm:space-y-2 w-full">
         <a
           href={project.link}
-          className="text-custom-accent hover:text-blue-800 transition-colors text-center ml-3 whitespace-nowrap"
+          className="text-custom-accent hover:text-blue-800 transition-colors text-center whitespace-nowrap"
         >
           View Project
         </a>
