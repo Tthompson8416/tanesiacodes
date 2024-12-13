@@ -40,7 +40,7 @@ const IntroSection = () => {
     >
       <div className="min-h-screen bg-custom-intro-bg flex flex-col items-center justify-center p-0 pt-18 lg:pb-56 relative overflow-hidden">
         {/* Gradient overlay at the bottom of the section */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-custom-gradient"></div>
 
         {/* Animated profile image */}
         <motion.img
@@ -69,15 +69,20 @@ const IntroSection = () => {
           animate="visible"
           className="font-thin text-custom-intro-text text-center mx-auto p-5 max-w-screen-md sm:max-w-[700px] md:max-w-[900px] lg:max-w-[900px] xl:max-w-[1100px] xl:mt-12 pb-24 xl:pb-2 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl"
         >
-          {words.map((word, index) => (
-            <motion.span
-              key={index}
-              variants={wordVariants}
-              className="inline-block mr-2"
-            >
-              {word}
-            </motion.span>
-          ))}
+          {words.map((word, index) => {
+            const isSpecialWord = ["Tanesia", "Thompson", "front-end developer"].includes(word.replace(",", ""));
+            return (
+              <motion.span
+                key={index}
+                variants={wordVariants}
+                className={`inline-block mr-2 ${
+                  isSpecialWord ? "text-custom-gradient font-semibold" : ""
+                }`}
+              >
+                {word}
+              </motion.span>
+            );
+          })}
         </motion.div>
       </div>
     </motion.div>

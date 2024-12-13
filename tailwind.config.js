@@ -15,6 +15,7 @@ export default {
         'custom-subtext': '#7e481c', // Project Description text color
         'custom-intro-bg': '#15a9a9',
         'custom-intro-text': '#eadcc2',
+        'custom-gradient': '#fae5ad',
     },
   },
 },
