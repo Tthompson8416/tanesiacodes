@@ -30,17 +30,28 @@ const ProjectsSection = () => {
         {projectsData.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-custom-light rounded-lg p-4 shadow-md flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-105 border border-custom-border min-h-[350px]"
+            className="bg-custom-light rounded-lg p-4 shadow-md flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:scale-105 border border-custom-border min-h-[350px]"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.3, delay: index * 0.4 }}
             viewport={{ once: true }}
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
+            <a
+              href={project.link} // Use the `link` property to navigate to the project's page
+              target="_blank" // Opens the link in a new browser tab
+              rel="noopener noreferrer" // Ensures security for external links
+              className="block relative group" // Ensures proper block-level wrapping of the image
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full rounded-md object-contain transition-transform duration-300 hover:scale-105"
+              />
+              <span className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Click to view project
+              </span>
+            </a>
+
             <h3 className="text-2xl font-semibold mb-2 text-custom-accent">
               {project.title}
             </h3>

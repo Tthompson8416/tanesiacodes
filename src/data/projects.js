@@ -1,8 +1,8 @@
-import projectOneImage from "/src/assets/images/taskinator.jpg";
-import projectTwoImage from "/src/assets/images/Fridge-to-Feast.jpg";
-import projectThreeImage from "/src/assets/images/Battle-Bots.jpg";
-import projectFourImage from "/src/assets/images/Password-Generator.jpg";
-import projectFiveImage from "/src/assets/images/Weather-Dashboard.jpg";
+import projectOneImage from "/src/assets/images/Taskinator.png";
+import projectTwoImage from "/src/assets/images/Fridge-to-feast.png";
+import projectThreeImage from "/src/assets/images/Battle-bots.png";
+import projectFourImage from "/src/assets/images/Password-generator.png";
+import projectFiveImage from "/src/assets/images/Weather-dashboard.png";
 
 // Projects array with tech stack as strings
 const projects = [
