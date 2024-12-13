@@ -65,12 +65,13 @@ const ProjectsSection = () => {
         })}
       </div>
       <div className="flex flex-col justify-center items-center mt-4 space-y-2 text-center sm:flex-col sm:items-center sm:space-y-2 w-full">
-        <a
+        <button
+        onClick={() => window.open(project.link, "_blank")}
           href={project.link}
-          className="text-custom-accent hover:text-blue-800 transition-colors text-center whitespace-nowrap"
+          className="text-white bg-custom-accent p-1 rounded-lg shadow-lg  hover:text-custom-gradient transition-colors duration-300 hover:shadow-xl text-center whitespace-nowrap"
         >
-          View Project
-        </a>
+          Explore Project
+        </button>
         {project.githubLink && (
           <a
             href={project.githubLink}
