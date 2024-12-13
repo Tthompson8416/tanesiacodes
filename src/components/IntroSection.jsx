@@ -54,7 +54,7 @@ const IntroSection = () => {
 
         {/* Welcome text */}
         <motion.h1
-          className="text-4xl md:text-5xl text-custom-light mb-4"
+          className="text-5xl font-bold md:text-6xl text-custom-light mb-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }} // Slight delay for welcome text
@@ -67,7 +67,7 @@ const IntroSection = () => {
           variants={paragraphVariants}
           initial="hidden"
           animate="visible"
-          className="text-lg text-custom-intro-text text-center mx-auto p-5 max-w-screen-md sm:max-w-[700px] md:max-w-[900px] lg:max-w-[900px] xl:max-w-[1100px] xl:mt-12 pb-24 xl:pb-2 lg:text-3xl md:text-2xl sm:text-xl"
+          className="font-thin text-custom-intro-text text-center mx-auto p-5 max-w-screen-md sm:max-w-[700px] md:max-w-[900px] lg:max-w-[900px] xl:max-w-[1100px] xl:mt-12 pb-24 xl:pb-2 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl"
         >
           {words.map((word, index) => (
             <motion.span
