@@ -52,7 +52,7 @@ const ProjectsSection = () => {
               </span>
             </a>
 
-            <h3 className="text-2xl font-semibold mb-2 text-custom-accent">
+            <h3 className="text-2xl font-semibold mb-2 pt-3 text-custom-accent">
               {project.title}
             </h3>
             <p className="text-custom-subtext mb-4 font-thin">
