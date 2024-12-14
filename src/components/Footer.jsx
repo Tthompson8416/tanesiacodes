@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright section */}
-        <p className="text-md mt-6">
+        <p className="text-2xl mt-6">
           &copy; {new Date().getFullYear()} https://tthompson8416.github.io/tanesiacodes/
         </p>
       </div>
