@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"; // Import Framer Motion for animations
-import ProfileImage from "../assets/images/desktop.png"; // Import profile image
+import { motion } from "framer-motion"; 
+import ProfileImage from "../assets/images/desktop.png"; 
 
 const IntroSection = () => {
   // Framer Motion animation variants for each letter/word
@@ -9,19 +9,18 @@ const IntroSection = () => {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 1, // Delay before the animation starts
-        duration: 0.5, // Duration of each letter's animation
-        staggerChildren: 0.05, // Stagger the animation for each character (adjust as needed)
+        delay: 1,
+        duration: 0.5, 
+        staggerChildren: 0.05, // Stagger the animation for each character
       },
     },
   };
 
-  // Variant for each word or character
   const wordVariants = {
-    hidden: { opacity: 0, x: -50 }, // Each word starts off-screen to the left
+    hidden: { opacity: 0, x: -50 }, 
     visible: {
       opacity: 1,
-      x: 0, // Bring the word/letter into its final position
+      x: 0, 
       transition: { duration: 0.5 },
     },
   };
@@ -33,16 +32,14 @@ const IntroSection = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -50 }} // Initial animation for the whole section
-      animate={{ opacity: 1, y: 0 }} // Final animation for the whole section
-      transition={{ duration: 1 }} // Timing for the section animation
+      initial={{ opacity: 0, y: -50 }} 
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }} 
       className="intro-section-container"
     >
       <div className="min-h-screen bg-custom-intro-bg flex flex-col items-center justify-center p-0 pt-18 lg:pb-56 relative overflow-hidden">
-        {/* Gradient overlay at the bottom of the section */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-custom-gradient"></div>
 
-        {/* Animated profile image */}
         <motion.img
           src={ProfileImage}
           alt="Profile"
@@ -57,7 +54,7 @@ const IntroSection = () => {
           className="text-5xl font-bold md:text-6xl text-custom-light mb-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }} // Slight delay for welcome text
+          transition={{ duration: 1, delay: 0.5 }} 
         >
           Welcome.
         </motion.h1>

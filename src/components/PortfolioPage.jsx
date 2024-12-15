@@ -1,15 +1,15 @@
 import IntroSection from './IntroSection';
 import ProjectsSection from '../components/ProjectsSection';
-import projects from '../data/projects'; // Import your projects array
-import Skills from '../components/Skills'; // Adjust the path if necessary
+import projects from '../data/projects'; 
+import Skills from '../components/Skills';
 
 
 const PortfolioPage = () => {
   return (
     <div>
       <IntroSection />
-      <ProjectsSection projects={projects} /> {/* Pass the projects array */}
-      <Skills /> {/* Add the Skills section here */}
+      <ProjectsSection projects={projects} /> 
+      <Skills /> 
     </div>
   );
 };

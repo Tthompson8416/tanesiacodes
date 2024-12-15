@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import AOS from "aos"; // Animation on Scroll
-import "aos/dist/aos.css"; // AOS styles
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 
-// Import all skill icons
+
 import { TiHtml5 } from "react-icons/ti";
 import { FaCss3Alt, FaReact, FaAngular, FaGithub, FaGit, FaWordpress, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -14,7 +14,6 @@ const Skills = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  // Define the skill groups with their respective icons and names
   const skillGroups = [
     {
       groupName: "Languages",

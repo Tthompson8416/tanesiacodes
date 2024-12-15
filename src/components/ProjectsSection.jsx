@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { motion } from "framer-motion"; // Import motion from Framer Motion
-import AOS from "aos"; // Import AOS library
-import "aos/dist/aos.css"; // Import AOS styles
+import { motion } from "framer-motion"; 
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import {
   SiHtml5,
   SiCss3,
@@ -37,10 +37,10 @@ const ProjectsSection = () => {
             viewport={{ once: true }}
           >
             <a
-              href={project.link} // Use the `link` property to navigate to the project's page
-              target="_blank" // Opens the link in a new browser tab
-              rel="noopener noreferrer" // Ensures security for external links
-              className="block relative group" // Ensures proper block-level wrapping of the image
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block relative group" 
             >
               <img
                 src={project.image}
@@ -90,13 +90,13 @@ const ProjectsSection = () => {
                   <div
                     key={i}
                     className="relative group flex flex-col items-center"
-                    // Add `relative` for positioning the tooltip relative to the icon
+                   
                   >
                     <IconComponent className="text-3xl text-gray-700" />
-                    {/* Tooltip span */}
+                   
                     <span
                       className="absolute bottom-full mb-1 hidden group-hover:flex px-2 py-1 text-xs text-white bg-gray-800 rounded shadow-lg w-max text-center whitespace-nowrap"
-                      // Tooltip is hidden by default; appears on hover
+                   
                     >
                       {tech}
                     </span>
@@ -136,7 +136,7 @@ ProjectsSection.propTypes = {
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      techStack: PropTypes.arrayOf(PropTypes.string).isRequired, // Note: Tech stack is still a string array
+      techStack: PropTypes.arrayOf(PropTypes.string).isRequired, 
       link: PropTypes.string.isRequired,
       githubLink: PropTypes.string,
     })
