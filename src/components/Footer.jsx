@@ -7,13 +7,12 @@ import { useState, useEffect } from "react";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show the button when scrolling past a certain point
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
-        setIsVisible(true); // Show when scrolled 300px or more
+        setIsVisible(true);
       } else {
-        setIsVisible(false); // Hide when scrolled less than 300px
+        setIsVisible(false);
       }
     };
 
@@ -22,7 +21,6 @@ const Footer = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -31,7 +29,6 @@ const Footer = () => {
     <footer
       className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-24"
       style={{ paddingBottom: `calc(1rem + env(safe-area-inset-bottom))` }}
-      /* Added dynamic padding to ensure the footer is not cut off on devices with a safe area inset (e.g., iPhone) */
     >
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-custom-intro-bg to-custom-gradient"></div>
 
@@ -64,12 +61,10 @@ const Footer = () => {
           </a>
         </div>
 
+        {/* Copyright Section */}
         <p
-          className="text-xl mt-6 pr-4 pl-4 text-center break-words"
-          style={{
-            wordBreak: "break-word", 
-            fontSize: "0.875rem",
-          }}
+          className="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl mt-6 text-center break-words leading-tight max-w-full"
+          style={{ wordBreak: "break-word", wordWrap: "break-word" }}
         >
           &copy; {new Date().getFullYear()}{" "}
           <a
