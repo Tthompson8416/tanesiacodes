@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="flex justify-center items-center gap-8 mb-6">
           <a
             href="mailto:tthompson8416@outlook.com"
-            className="text-white pb-2 hover:text-blue-600 transition-colors text-4xl"
+            className="text-white pb-2 hover:text-blue-600 transition-colors text-4xl md:text-5xl"
             aria-label="Email"
           >
             <HiAtSymbol />
@@ -44,7 +44,7 @@ const Footer = () => {
 
           <a
             href="tel:3238771527"
-            className="text-white pb-2 hover:text-black transition-colors text-4xl"
+            className="text-white pb-2 hover:text-black transition-colors text-4xl md:text-5xl"
             aria-label="Phone"
           >
             <ImMobile />
@@ -54,7 +54,7 @@ const Footer = () => {
             href="/tanesiacodes/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-red-400 transition-colors text-4xl"
+            className="text-white hover:text-red-400 transition-colors text-4xl md:text-5xl"
             aria-label="Resume"
           >
             <TbFileCv />
