@@ -1,8 +1,8 @@
-import { HiAtSymbol } from "react-icons/hi2"; 
-import { ImMobile } from "react-icons/im"; 
+import { HiAtSymbol } from "react-icons/hi2";
+import { ImMobile } from "react-icons/im";
 import { TbFileCv } from "react-icons/tb";
-import { TbArrowBigUpLinesFilled } from "react-icons/tb"; 
-import { useState, useEffect } from "react"; 
+import { TbArrowBigUpLinesFilled } from "react-icons/tb";
+import { useState, useEffect } from "react";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,9 +28,9 @@ const Footer = () => {
   };
 
   return (
-    <footer 
-      className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-24" 
-      style={{ paddingBottom: `calc(1rem + env(safe-area-inset-bottom))` }} 
+    <footer
+      className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-24"
+      style={{ paddingBottom: `calc(1rem + env(safe-area-inset-bottom))` }}
       /* Added dynamic padding to ensure the footer is not cut off on devices with a safe area inset (e.g., iPhone) */
     >
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-custom-intro-bg to-custom-gradient"></div>
@@ -64,15 +64,27 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="text-xl mt-6 pr-4 pl-4">
-          &copy; {new Date().getFullYear()} https://tthompson8416.github.io/tanesiacodes/
+        <p
+          className="text-xl mt-6 pr-4 pl-4 text-center break-words"
+          style={{
+            wordBreak: "break-word", 
+            fontSize: "0.875rem",
+          }}
+        >
+          &copy; {new Date().getFullYear()}{" "}
+          <a
+            href="https://tthompson8416.github.io/tanesiacodes/"
+            className="hover:underline"
+          >
+            https://tthompson8416.github.io/tanesiacodes/
+          </a>
         </p>
       </div>
 
       {/* Back to Top Button */}
       {isVisible && (
         <button
-          onClick={scrollToTop} 
+          onClick={scrollToTop}
           className="fixed bottom-8 right-8 bg-custom-accent text-white p-3 rounded-full shadow-lg hover:bg-custom-accent-dark transition-all duration-300 z-50"
           aria-label="Back to Top"
         >
