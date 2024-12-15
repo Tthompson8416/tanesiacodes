@@ -28,12 +28,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-24">
-     
+    <footer 
+      className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-24" 
+      style={{ paddingBottom: `calc(1rem + env(safe-area-inset-bottom))` }} 
+      /* Added dynamic padding to ensure the footer is not cut off on devices with a safe area inset (e.g., iPhone) */
+    >
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-custom-intro-bg to-custom-gradient"></div>
 
       <div className="max-w-6xl mx-auto px-4 text-center relative z-10 flex flex-col items-center gap-4">
-
         <div className="flex justify-center items-center gap-8 mb-6">
           <a
             href="mailto:tthompson8416@outlook.com"
