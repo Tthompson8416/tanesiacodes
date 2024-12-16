@@ -25,10 +25,10 @@ const Navbar = () => {
     >
       {/* Icons Section */}
       <div className="flex gap-6">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Tthompson8416" target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-custom-accent text-2xl hover:text-custom-gradient" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/tanesia-thompson-08a650246/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-custom-accent text-2xl hover:text-custom-gradient" />
         </a>
       </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Navigation Links */}
       <div className="flex gap-8 text-custom-gh font-semibold">
         <a href="#projects" className="hover:text-custom-gradient">
-          Projects
+          My Work
         </a>
         <a href="#techskills" className="hover:text-custom-gradient">
           Tech Skills
