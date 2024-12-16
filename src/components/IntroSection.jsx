@@ -41,6 +41,9 @@ const IntroSection = () => {
       <Navbar />
 
       <div className="min-h-screen bg-custom-intro-bg flex flex-col items-center justify-center p-0 pt-18 lg:pb-56 relative overflow-hidden">
+        
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-custom-gradient"></div>
+      
         <motion.img
           src={ProfileImage}
           alt="Profile"

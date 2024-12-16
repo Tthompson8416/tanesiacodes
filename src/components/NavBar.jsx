@@ -21,29 +21,51 @@ const Navbar = () => {
       initial="hidden"
       animate="visible"
       variants={slideDownVariants}
-      className="fixed top-0 left-0 w-full bg-custom-dark h-14 flex items-center justify-between px-8 shadow-md z-50"
+      className="fixed top-0 left-0 w-full bg-custom-dark h-24 flex items-center justify-between px-4 sm:px-6 shadow-md z-50 sm:h-20 md:h-16"
     >
-      {/* Icons Section */}
-      <div className="flex gap-6">
-        <a href="https://github.com/Tthompson8416" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-custom-accent text-2xl hover:text-custom-gradient" />
-        </a>
-        <a href="https://www.linkedin.com/in/tanesia-thompson-08a650246/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-custom-accent text-2xl hover:text-custom-gradient" />
-        </a>
-      </div>
+      {/* Container for Icons and Links */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full">
+        {/* Icons Section */}
+        <div className="flex justify-center sm:justify-start gap-4 sm:gap-6 mb-2 sm:mb-0">
+          <a
+            href="https://github.com/Tthompson8416"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub className="text-custom-accent text-3xl sm:text-4xl hover:text-custom-gradient" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tanesia-thompson-08a650246/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin className="text-custom-accent text-3xl sm:text-4xl hover:text-custom-gradient" />
+          </a>
+        </div>
 
-      {/* Navigation Links */}
-      <div className="flex gap-8 text-custom-gh font-semibold">
-        <a href="#projects" className="hover:text-custom-gradient">
-          My Work
-        </a>
-        <a href="#techskills" className="hover:text-custom-gradient">
-          Tech Skills
-        </a>
-        <a href="#contact" className="hover:text-custom-gradient">
-          Contact Me
-        </a>
+        {/* Navigation Links */}
+        <div className="flex gap-4 sm:gap-8 justify-center sm:justify-end text-custom-gh font-semibold text-sm lg:text-3xl sm:text-lg whitespace-nowrap">
+          <a
+            href="#projects"
+            className="hover:text-custom-accent"
+          >
+            My Work
+          </a>
+          <a
+            href="#techskills"
+            className="hover:text-custom-accent"
+          >
+            Tech Skills
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-custom-accent"
+          >
+            Contact Me
+          </a>
+        </div>
       </div>
     </motion.nav>
   );
