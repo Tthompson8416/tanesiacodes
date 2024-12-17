@@ -47,7 +47,7 @@ const IntroSection = () => {
         <motion.img
           src={ProfileImage}
           alt="Profile"
-          className="mb-10 mr-5 rounded-lg w-[600px] h-[500px] object-cover"
+          className="mb-20 mr-1 rounded-lg w-[600px] h-[500px] object-cover xl:w-[800px] xl:h-[700px] 2xl:w-[1000px] 2xl:h-[900px]"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
