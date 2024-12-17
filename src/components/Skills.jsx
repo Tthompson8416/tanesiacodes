@@ -69,13 +69,13 @@ const Skills = () => {
       <div className="flex flex-wrap justify-center gap-16 mb-16">
         {skillGroups.map((group, index) => (
           <div key={index} data-aos="fade-up" className="text-center">
-            <h3 className="text-3xl font-semibold mb-4 text-custom-accent">
+            <h3 className="text-3xl font-semibold mb-4 text-custom-subtext">
               {group.groupName}
             </h3>
             <div className="flex flex-wrap justify-center gap-6">
               {group.skills.map((skill, i) => (
                 <div key={i} className="relative group flex flex-col items-center">
-                  <div className="text-5xl text-custom-accent">{skill.icon}</div>
+                  <div className="text-5xl text-custom-gh">{skill.icon}</div>
                   {/* Tooltip */}
                   <span className="absolute bottom-full mb-1 hidden group-hover:flex px-2 py-1 text-xs text-white bg-gray-800 rounded shadow-lg w-max text-center">
                     {skill.name}
@@ -90,14 +90,14 @@ const Skills = () => {
       <div className="flex flex-wrap justify-center gap-40 mt-28">
         {textSkillGroups.map((group, index) => (
           <div key={index} data-aos="fade-up" className="text-center">
-            <h3 className="text-3xl font-semibold mb-4 text-custom-accent">
+            <h3 className="text-3xl font-semibold mb-4 text-custom-subtext">
               {group.groupName}
             </h3>
             <div className="flex flex-wrap justify-center gap-8">
               {group.skills.map((skill, i) => (
                 <div
                   key={i}
-                  className="text-2xl font-bold text-custom-subtext whitespace-nowrap"
+                  className="text-2xl font-bold text-custom-gh whitespace-nowrap"
                 >
                   {skill.name}
                 </div>
