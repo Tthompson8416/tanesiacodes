@@ -26,7 +26,7 @@ const Navbar = () => {
       {/* Container for Icons and Links */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full">
         {/* Icons Section */}
-        <div className="flex justify-center sm:justify-start gap-4 sm:gap-6 mb-2 sm:mb-0">
+        <div className="flex justify-center sm:justify-start gap-6 mr-3 mb-2 sm:mb-0">
           <a
             href="https://github.com/Tthompson8416"
             target="_blank"

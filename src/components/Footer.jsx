@@ -27,14 +27,14 @@ const Footer = () => {
 
   return (
     <footer
-      id="contact" className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden pt-12 h-64"
+      id="contact" className="bg-custom-intro-bg text-custom-intro-text py-7 relative overflow-hidden md:pt-8 pt-12 h-48"
       style={{ paddingBottom: `calc(1rem + env(safe-area-inset-bottom))` }}
     >
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-custom-intro-bg to-custom-gradient"></div>
+      <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-t from-custom-intro-bg to-custom-gradient"></div>
 
-      <div className="max-w-6xl mx-auto px-4 text-center relative z-10 flex flex-col items-center gap-4">
-        <p id="contactme" className="text-2xl sm:text-3xl md:text-4xl font-thin pt-5 pb-5">Contact Me</p>
-        <div className="pt-1 flex justify-center items-center gap-8">
+      <div className="max-w-6xl mx-auto px-4 text-center relative z-10 flex flex-col items-center gap-4 pb-2">
+        <p id="contactme" className="text-2xl sm:text-3xl md:text-4xl font-thin ">Contact Me</p>
+        <div className="flex justify-center items-center gap-8">
           <a
             href="mailto:tthompson8416@outlook.com"
             className="text-white pb-2 hover:text-blue-600 transition-colors text-4xl md:text-5xl"
