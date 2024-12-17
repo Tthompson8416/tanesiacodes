@@ -52,10 +52,10 @@ const ProjectsSection = () => {
               </span>
             </a>
 
-            <h3 className="text-2xl font-semibold mb-2 pt-3 text-custom-accent">
+            <h3 className="text-2xl xl:text-3xl font-semibold mb-2 pt-3 text-custom-accent">
               {project.title}
             </h3>
-            <p className="text-custom-subtext mb-4 font-thin">
+            <p className="text-custom-subtext mb-4 font-thin xl:text-xl">
               {project.description}
             </p>
             <div className="flex space-x-2 mb-4">
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-custom-gh hover:text-black transition-colors"
+                  className="text-custom-gh hover:text-black text-xl xl:text-2xl pt-2 transition-colors"
                 >
                   <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
