@@ -3,6 +3,7 @@ import projectTwoImage from "/src/assets/images/Fridge-to-feast.png";
 import projectThreeImage from "/src/assets/images/Battle-bots.png";
 import projectFourImage from "/src/assets/images/Password-generator.png";
 import projectFiveImage from "/src/assets/images/Weather-dashboard.png";
+import projectSixImage from "/src/assets/images/Fork-and-footprints.png";
 
 // Projects array with tech stack as strings
 const projects = [
@@ -50,6 +51,15 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"], 
     link: "https://tthompson8416.github.io/Weather-Dashboard",
     githubLink: "https://github.com/Tthompson8416/Weather-Dashboard",
+  },
+  {
+    title: "Fork & Footprints",
+    description:
+      " This React-powered application maps out my worldwide travels while offering a curated collection of traditional recipes I've discovered along the way, allowing visitors to experience each destination through both sight and flavor.",
+    image: projectSixImage,
+    techStack: ["React", "JavaScript", "Tailwind CSS"], 
+    link: "https://tthompson8416.github.io/fork-and-footprints/",
+    githubLink: "https://github.com/Tthompson8416/fork-and-footprints",
   },
 ];
 
