@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="/tanesiacodes/resume.pdf"
+            href="/tanesiacodes/resume2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-red-400 transition-colors text-4xl md:text-5xl"
